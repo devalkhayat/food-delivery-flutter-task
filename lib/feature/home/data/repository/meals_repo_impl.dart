@@ -21,12 +21,14 @@ class MealsRepoImpl extends MealRepository {
 
       //
 
-      result.meals.forEach((item) => mealsResult.add(MealEntity(
+      for (var item in result.meals) {
+        mealsResult.add(MealEntity(
           id: item.id,
           name: item.name,
           image: item.image,
           rate: "4.5",
-          price: "9.99")));
+          price: "9.99"));
+      }
       return Right(mealsResult);
     } catch (ex) {
       return Left(Failure(errorMessage: ex.toString()));

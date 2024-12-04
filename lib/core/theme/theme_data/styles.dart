@@ -3,7 +3,7 @@ import 'package:food_delivery_app/core/constants.dart' as consts;
 import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
 
 class Styles {
-  Styles._() {}
+  Styles._();
 
   static const headlineLarge = TextStyle(
       color: colors.white,

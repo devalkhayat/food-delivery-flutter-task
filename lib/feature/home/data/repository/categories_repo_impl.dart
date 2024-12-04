@@ -17,7 +17,9 @@ class CategoriesRepoImpl extends CategoriesRepository {
       var data = await consumer.getCategories();
       var result = CategoriesResponse.fromJson(jsonDecode(data.body));
       //
-      result.categories.forEach((item) => categoriesResult.add(CategoryEntity(id: item.id, name: item.name)));
+      for (var item in result.categories) {
+        categoriesResult.add(CategoryEntity(id: item.id, name: item.name));
+      }
       return Right(categoriesResult);
     } catch (ex) {
       return Left(Failure(errorMessage: ex.toString()));

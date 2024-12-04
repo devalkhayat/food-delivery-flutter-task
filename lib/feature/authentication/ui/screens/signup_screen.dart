@@ -2,7 +2,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/widgets/app_input_field.dart';
 import 'package:food_delivery_app/feature/authentication/ui/authentication_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/feature/home/ui/screens/home_screen.dart';
 
 import '../../../../core/widgets/app_button.dart';
 import '../../../../core/widgets/general.dart';

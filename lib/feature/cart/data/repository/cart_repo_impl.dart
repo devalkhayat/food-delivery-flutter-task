@@ -1,10 +1,8 @@
-import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:food_delivery_app/core/failure.dart';
 import 'package:food_delivery_app/feature/cart/domain/entities/cart_item_entity.dart';
 import 'package:food_delivery_app/feature/cart/domain/repo/cart_repository.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:food_delivery_app/core/constants.dart' as constants;
 import '../../../../core/local/hive_config.dart';
 

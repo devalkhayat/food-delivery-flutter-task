@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -6,7 +5,7 @@ import '../cart_strings.dart';
 
 class Appbar extends StatelessWidget implements PreferredSizeWidget{
 
-  const Appbar({ Key? key}): super(key: key);
+  const Appbar({ super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,6 +10,8 @@ import 'meal_item.dart';
 
 class Menulist extends StatelessWidget {
   late BuildContext _context;
+
+  Menulist({super.key});
 
   @override
   Widget build(BuildContext context) {

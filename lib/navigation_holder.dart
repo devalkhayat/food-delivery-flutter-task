@@ -21,7 +21,7 @@ class _NavigationHolderState extends State<navigation_holder> {
     });
   }
 
-  final List<Widget> _pages=[const home_screen(),const favorites_screen(),CartScreen(),const profile_screen()];
+  final List<Widget> _pages=[const home_screen(),const favorites_screen(),const CartScreen(),const profile_screen()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

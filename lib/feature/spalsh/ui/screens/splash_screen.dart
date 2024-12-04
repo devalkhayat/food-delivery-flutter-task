@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/network/consumer.dart';
 import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
 import 'package:food_delivery_app/feature/spalsh/ui/splash_strings.dart';
 
 import '../../../../core/widgets/general.dart';
 import '../../../authentication/ui/screens/login_screen.dart';
-import '../../../home/data/repository/categories_repo_impl.dart';
-import '../../../home/domain/use_cases/get_categories_usecase.dart';
 
 class Splashscreen extends StatelessWidget {
   const Splashscreen({super.key});

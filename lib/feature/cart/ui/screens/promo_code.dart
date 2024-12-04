@@ -4,7 +4,6 @@ import 'package:food_delivery_app/feature/cart/ui/cart_strings.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/widgets/round_input.dart';
-import '../viewmodels/cart_screen_summary_viewmodel.dart';
 import '../viewmodels/cart_screen_viewmodel.dart';
 class PromoCode extends StatefulWidget {
   const PromoCode({super.key});
@@ -18,7 +17,7 @@ class _PromoCodeState extends State<PromoCode> {
   Widget build(BuildContext context) {
 
     if(context.watch<CartScreenViewModel>().itemsList!.isEmpty){
-      return Container(child: Text(""),);
+      return Container(child: const Text(""),);
 
     }else{
       return  Row(

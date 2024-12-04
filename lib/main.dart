@@ -5,13 +5,10 @@ import 'package:food_delivery_app/feature/cart/ui/viewmodels/cart_screen_viewmod
 import 'package:food_delivery_app/feature/favorites/ui/viewmodels/favorites_screen_viewmodel.dart';
 import 'package:food_delivery_app/feature/home/ui/viewmodels/home_screen_viewmodel.dart';
 import 'package:food_delivery_app/feature/meal_details/ui/viewmodels/meal_details_screen_viewmodel.dart';
-import 'package:food_delivery_app/navigation_holder.dart';
 import 'package:provider/provider.dart';
 import 'core/local/hive_config.dart';
 import 'feature/cart/ui/viewmodels/cart_screen_summary_viewmodel.dart';
-import 'feature/meal_details/ui/screens/meal_details_screen.dart';
 import 'feature/spalsh/ui/screens/splash_screen.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 void main() async{
   await HiveConfig.init();
 

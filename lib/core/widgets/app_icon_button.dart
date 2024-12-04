@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
@@ -7,7 +6,7 @@ class AppIconButton extends StatelessWidget {
   final String imageLocation;
   final VoidCallback action;
 
-   AppIconButton({Key? key,required this.imageLocation,required this.action}): super(key: key);
+   const AppIconButton({super.key,required this.imageLocation,required this.action});
 
   @override
   Widget build(BuildContext context) {

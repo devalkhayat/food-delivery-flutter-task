@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app/core/theme/theme_data/styles.dart';
-import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
 
 class RoundInput extends StatelessWidget {
   final String hint;
-  const RoundInput({Key? key, required String this.hint})
-      : super(key: key);
+  const RoundInput({super.key, required this.hint});
 
   @override
   Widget build(BuildContext context) {

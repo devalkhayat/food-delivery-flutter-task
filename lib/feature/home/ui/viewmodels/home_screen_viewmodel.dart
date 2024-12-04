@@ -1,22 +1,15 @@
-import 'dart:io';
 
-import 'package:dartz/dartz.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:food_delivery_app/feature/cart/domain/entities/cart_item_entity.dart';
 import 'package:food_delivery_app/feature/home/data/repository/meals_repo_impl.dart';
 import 'package:food_delivery_app/feature/home/domain/entities/category_entity.dart';
 import 'package:food_delivery_app/feature/home/domain/entities/meal_entity.dart';
 import 'package:food_delivery_app/feature/home/domain/use_cases/get_meals_usecase.dart';
-import 'package:provider/provider.dart';
 
-import '../../../../core/failure.dart';
-import '../../../cart/data/repository/cart_repo_impl.dart';
-import '../../../cart/domain/use_cases/get_items_usecase.dart';
 import '../../data/repository/categories_repo_impl.dart';
 import '../../domain/use_cases/get_categories_usecase.dart';
 
 class HomeScreenViewModel extends ChangeNotifier {
-  List<HomeScreenModel> _iList = [];
+  final List<HomeScreenModel> _iList = [];
   List<HomeScreenModel> get iList => _iList;
 
 

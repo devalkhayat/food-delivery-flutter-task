@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/feature/cart/domain/entities/cart_item_entity.dart';
@@ -6,7 +5,6 @@ import 'package:food_delivery_app/feature/cart/ui/screens/cart_screen.dart';
 import 'package:food_delivery_app/feature/cart/ui/viewmodels/cart_screen_viewmodel.dart';
 import 'package:food_delivery_app/feature/favorites/domain/entities/favorite_item_entity.dart';
 import 'package:food_delivery_app/feature/favorites/ui/viewmodels/favorites_screen_viewmodel.dart';
-import 'package:food_delivery_app/feature/home/ui/screens/menu_list.dart';
 import 'package:food_delivery_app/feature/meal_details/domain/entities/meal_details_entity.dart';
 import 'package:food_delivery_app/feature/meal_details/ui/meal_details_strings.dart';
 import 'package:food_delivery_app/feature/meal_details/ui/screens/quantity_counter.dart';
@@ -15,11 +13,10 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
 import '../../../../core/widgets/app_button.dart';
-import '../../../../core/widgets/app_icon_button.dart';
 
 class MealDetailsScreen extends StatelessWidget {
   final String mealID;
-  MealDetailsScreen({Key? key, required String this.mealID}) : super(key: key);
+  MealDetailsScreen({super.key, required this.mealID});
 
   late BuildContext _context;
   late MealDetailsEntity currentItem;
@@ -121,7 +118,7 @@ class MealDetailsScreen extends StatelessWidget {
                 .then((d) {
               Future.delayed(const Duration(milliseconds: 500), () async {
                 Navigator.of(_context).push(
-                    MaterialPageRoute(builder: (_context) => CartScreen()));
+                    MaterialPageRoute(builder: (context) => const CartScreen()));
               });
             });
           },
@@ -156,7 +153,7 @@ class MealDetailsScreen extends StatelessWidget {
       children: [
         Expanded(
             child: Text(
-          "${data.detailsEntity?.price!}" + r"$",
+          "${data.detailsEntity?.price}" r"$",
           style: Theme.of(_context)
               .textTheme
               .headlineMedium

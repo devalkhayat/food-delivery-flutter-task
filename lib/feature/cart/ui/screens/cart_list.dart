@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/feature/cart/ui/viewmodels/cart_screen_viewmodel.dart';
@@ -10,7 +9,6 @@ import '../../../../core/widgets/app_icon_button.dart';
 import '../../../meal_details/ui/screens/meal_details_screen.dart';
 import '../../domain/entities/cart_item_entity.dart';
 import '../viewmodels/cart_screen_summary_viewmodel.dart';
-import 'net_summary.dart';
 
 class CartList extends StatefulWidget {
   const CartList({super.key});
@@ -49,9 +47,9 @@ class _CartListState extends State<CartList> {
       return ListView.builder(
         shrinkWrap: true,
         //physics: const NeverScrollableScrollPhysics(),
-        itemCount: data?.length,
+        itemCount: data.length,
         itemBuilder: (BuildContext context, int index) {
-          return getListItem(data![index], index);
+          return getListItem(data[index], index);
         },
       );
     }
@@ -157,7 +155,7 @@ class _CartListState extends State<CartList> {
     var items = context.read<CartScreenViewModel>().itemsList;
     var currentItem = items![index];
 
-    ValueNotifier<int> _quantityCounter = ValueNotifier(currentItem.quantity);
+    ValueNotifier<int> quantityCounter = ValueNotifier(currentItem.quantity);
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -166,9 +164,9 @@ class _CartListState extends State<CartList> {
             imageLocation: "assets/images/ic_items_subtract.svg",
             action: () {
               setState(() {
-                if (_quantityCounter.value >= 1) {
+                if (quantityCounter.value >= 1) {
                   //for UI
-                  _quantityCounter.value -= 1;
+                  quantityCounter.value -= 1;
                   // for memory and local storage
                   currentItem.quantity -= 1;
                   currentItem.totalAmount =
@@ -184,7 +182,7 @@ class _CartListState extends State<CartList> {
         Padding(
           padding: const EdgeInsets.only(bottom: 0, left: 8, right: 8),
           child: ValueListenableBuilder(
-              valueListenable: _quantityCounter,
+              valueListenable: quantityCounter,
               builder: (BuildContext context, int value, Widget? child) {
                 return Text(value.toString());
               }),
@@ -194,7 +192,7 @@ class _CartListState extends State<CartList> {
             action: () {
               setState(() {
                 //for UI
-                _quantityCounter.value += 1;
+                quantityCounter.value += 1;
                 // for memory and local storage
                 currentItem.quantity += 1;
                 currentItem.totalAmount =
@@ -202,7 +200,7 @@ class _CartListState extends State<CartList> {
                 p.updateItem(currentItem);
 
                 Provider.of<CartScreenSummaryViewmodel>(context, listen: false)
-                    .CalcNet(items!);
+                    .CalcNet(items);
               });
             })
       ],

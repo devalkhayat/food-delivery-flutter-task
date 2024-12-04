@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/feature/cart/ui/viewmodels/cart_screen_viewmodel.dart';
 import 'package:food_delivery_app/feature/home/ui/home_strings.dart';
 import 'package:food_delivery_app/feature/home/ui/screens/search_box.dart';
-import 'package:food_delivery_app/feature/home/ui/viewmodels/home_screen_viewmodel.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/widgets/general.dart';
 import 'menu_list.dart';

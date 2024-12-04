@@ -7,11 +7,10 @@ class CustomInput extends StatelessWidget {
   final bool isSecureField;
 
   const CustomInput(
-      {Key? key,
-      required String this.label,
-      required String this.hint,
-      bool this.isSecureField = false})
-      : super(key: key);
+      {super.key,
+      required this.label,
+      required this.hint,
+      this.isSecureField = false});
 
   @override
   Widget build(BuildContext context) {

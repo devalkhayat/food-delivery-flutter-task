@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:food_delivery_app/core/widgets/app_button.dart';
 import 'package:food_delivery_app/feature/cart/ui/screens/appbar.dart';
 import 'package:food_delivery_app/feature/cart/ui/screens/cart_list.dart';
 import 'package:food_delivery_app/feature/cart/ui/screens/promo_code.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
-import '../cart_strings.dart';
 import '../viewmodels/cart_screen_viewmodel.dart';
 import 'checkout.dart';
 import 'net_summary.dart';

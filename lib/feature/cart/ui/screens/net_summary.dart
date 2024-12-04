@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/feature/cart/ui/cart_strings.dart';
 import 'package:food_delivery_app/core/theme/util/colors.dart' as colors;
@@ -25,11 +24,11 @@ class _NetSummaryState extends State<NetSummary> {
     }else{
       return Column(
         children: [
-          getSection(CartStrings.subTotal, model!.subTotal.toString()),
-          getSection(CartStrings.promoCodeInputPlaceHolder, model!.promoCode.toString()),
-          getSection(CartStrings.delivery, model!.delivery.toString()),
+          getSection(CartStrings.subTotal, model.subTotal.toString()),
+          getSection(CartStrings.promoCodeInputPlaceHolder, model.promoCode.toString()),
+          getSection(CartStrings.delivery, model.delivery.toString()),
           const DottedLine(),
-          getFinalSection(model!.netTotal.toString(),model!.itemsNumber)
+          getFinalSection(model.netTotal.toString(),model.itemsNumber)
         ],
       );
     }
@@ -96,7 +95,7 @@ class _NetSummaryState extends State<NetSummary> {
                       width: 4.0,
                     ),
                     Text(
-                      "(${quantity} ${CartStrings.items})",
+                      "($quantity ${CartStrings.items})",
                       style: Theme.of(context)
                           .textTheme
                           .bodySmall

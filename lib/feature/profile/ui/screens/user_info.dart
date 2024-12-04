@@ -27,7 +27,7 @@ class UserInfo extends StatelessWidget {
     return Row(
       children: [
         Expanded(flex: 1, child: getThumbnail()),
-        SizedBox(
+        const SizedBox(
           width: 8.0,
         ),
         Expanded(flex: 2, child: getNamePhone()),
@@ -36,7 +36,7 @@ class UserInfo extends StatelessWidget {
   }
 
   getThumbnail() {
-    return Container(
+    return SizedBox(
       width: 120,
       height: 120,
       child: Stack(

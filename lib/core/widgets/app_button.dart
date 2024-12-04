@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 class Appbutton extends StatelessWidget {
  final String title;
  final VoidCallback action;
- const Appbutton({Key? key, required this.title, required this.action})
-      : super(key: key);
+ const Appbutton({super.key, required this.title, required this.action});
 
   @override
   Widget build(BuildContext context) {

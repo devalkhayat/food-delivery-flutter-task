@@ -69,9 +69,9 @@ class _FavoritesListState extends State<FavoritesList> {
             return ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: data?.length,
+              itemCount: data.length,
               itemBuilder: (BuildContext context, int index) {
-                return getListItem(data![index], index, setState);
+                return getListItem(data[index], index, setState);
               },
             );
           }

@@ -14,9 +14,9 @@ class CartScreenSummaryViewmodel extends ChangeNotifier {
       subTotalCalc += item.totalAmount;
     }
 
-    this.subTotal=subTotalCalc;
-    this.netTotal = (subTotalCalc + delivery) - promoCode;
-    this.itemsNumber = itemsList.length;
+    subTotal=subTotalCalc;
+    netTotal = (subTotalCalc + delivery) - promoCode;
+    itemsNumber = itemsList.length;
 
     notifyListeners();
   }

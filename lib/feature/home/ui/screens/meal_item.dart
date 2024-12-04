@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app/feature/meal_details/ui/screens/meal_details_screen.dart';
@@ -9,7 +8,7 @@ class MealItem extends StatelessWidget {
 
   final MealEntity meal;
   late BuildContext _context;
-   MealItem({Key? key, required MealEntity this.meal}): super(key: key);
+   MealItem({super.key, required this.meal});
 
 
 

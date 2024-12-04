@@ -43,6 +43,6 @@ class FavoritesScreenViewModel extends ChangeNotifier {
       }
     });
 
-    //notifyListeners();
+
   }
 }
