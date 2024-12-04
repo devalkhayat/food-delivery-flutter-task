@@ -1,0 +1,24 @@
+import 'dart:ui';
+
+//const Color primaryColor= Color(0xfff80c2c);
+const Color primaryColor= Color(0xff326b60);
+const Color white= Color(0xfffdfdfd);
+const Color black= Color(0xff000000);
+const Color gray1= Color(0xFFC3C3C3);
+const Color gray50= Color(0x80000000);
+const Color gray3= Color(0xFFEEEEEE);
+const Color gray4=Color(0xfffdfdfd);
+const Color gray5=Color(0xFFC4C4C4);
+const Color gray6=Color(0xFFB3B3B3);
+const Color shadowColor=Color(0x40E9E9E9);
+const Color gray7=Color(0xFFD0D2D1);
+const Color gray8=Color(0xFFADADAF);
+const Color white2=Color(0x12FDFDFF);
+const Color white3=Color(0x1A393939);
+const Color gray9=Color(0xFFD9D9D9);
+const Color gray10=Color(0xFF7F7F7F);
+const Color gray11=Color(0xFF9796A1);
+const Color gray12=Color(0xFFF1F2F3);
+const Color gray13=Color(0xFFBEBEBE);
+const Color gray14=Color(0x99000000);
+const Color blueSky=Color(0xFFB4E5BC);
