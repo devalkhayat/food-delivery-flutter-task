@@ -43,7 +43,7 @@ class LoginScreen extends StatelessWidget {
         ),
 
          Appbutton(title: AuthenticationStrings.login,action: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> const SignUpScreen()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const SignUpScreen()));
         },)
        ,
         Row(

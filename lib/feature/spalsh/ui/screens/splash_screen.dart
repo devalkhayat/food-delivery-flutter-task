@@ -41,7 +41,7 @@ class Splashscreen extends StatelessWidget {
               height: 60.0,
               child: ElevatedButton(
                 onPressed: () => {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()))
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const LoginScreen()))
                 },
                 style: Theme.of(context).elevatedButtonTheme.style?.copyWith(
                     backgroundColor:

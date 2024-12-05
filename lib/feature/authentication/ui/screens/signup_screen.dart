@@ -101,7 +101,7 @@ class SignUpScreen extends StatelessWidget {
                     Appbutton(
                       title: AuthenticationStrings.signUp,
                       action: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const navigation_holder()));
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const navigation_holder()));
                       },
                     ),
                     const SizedBox(
