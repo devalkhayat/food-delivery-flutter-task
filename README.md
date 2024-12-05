@@ -1,16 +1,21 @@
-# food_delivery_app
+# Food delivery Task
+a simple demo flutter app, developed with dart language
 
-A new Flutter project.
 
-## Getting Started
+# Technologies & Libraries: 
 
-This project is a starting point for a Flutter application.
+🖋️ Dart Language 
+<br/>
+🖋️ MVVM + Clean Architecture by Feature
+<br/>
+🖋️ Provider State Management
+<br/>
+🖋️ Http Network Library
+<br/>
+🖋️ Hive For Local Storage 
+<br/>
+🖋️ Navigation
 
-A few resources to get you started if this is your first Flutter project:
+# demo
+https://github.com/user-attachments/assets/952df36b-b133-408a-bd60-262da7b501bd
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
